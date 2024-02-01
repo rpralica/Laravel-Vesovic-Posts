@@ -18,7 +18,7 @@
 
                 @csrf
                 <a href="{{route('post.edit',['post'=>$post])}}"  class="btn btn-warning">Edit</a>
-<form action="{{route('post.index',['post'=>$post])}}" method="post">
+<form action="{{route('post.delete',['post'=>$post])}}" method="post">
     @csrf
                 <button class="btn btn-danger">Delete</button>
             </form>

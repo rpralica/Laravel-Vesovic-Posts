@@ -60,6 +60,6 @@ class PostsController extends Controller
       public function destroy (Post $post)
         {
 $post->delete();
-            return view ('posts/{post}',['post'=>$post]);
+            return redirect (route('post.index'));
         }
 }
